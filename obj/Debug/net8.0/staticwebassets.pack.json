@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/wwwroot/images/Hilton.png",
+      "PackagePath": "staticwebassets/images/Hilton.png"
+    },
+    {
+      "Id": "/Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/wwwroot/images/IconLogo_v02.png",
+      "PackagePath": "staticwebassets/images/IconLogo_v02.png"
+    },
+    {
+      "Id": "/Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/wwwroot/images/TheBazaarLogo.png",
+      "PackagePath": "staticwebassets/images/TheBazaarLogo.png"
+    },
+    {
       "Id": "/Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

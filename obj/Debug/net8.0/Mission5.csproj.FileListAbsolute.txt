@@ -28,3 +28,4 @@
 /Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/obj/Debug/net8.0/Mission5.pdb
 /Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/obj/Debug/net8.0/Mission5.genruntimeconfig.cache
 /Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/obj/Debug/net8.0/ref/Mission5.dll
+/Users/maxrubert/Desktop/Information Systems/Winter 2025/IS 413/Homework/Mission5/obj/Debug/net8.0/Mission5.sourcelink.json

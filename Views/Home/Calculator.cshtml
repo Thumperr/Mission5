@@ -1,0 +1,63 @@
+@{
+    ViewData["Title"] = "Tutoring Calculator";
+}
+
+<h1>Tutoring Calculator</h1>
+
+<div class="container">
+    <form id="calculatorForm">
+        <div class="mb-3">
+            <label for="hours" class="form-label">Number of hours:</label>
+            <input type="number" id="hours" class="form-control" placeholder="Enter number of hours" min="1" />
+            <div id="hoursError" class="text-danger" style="display:none;">Please enter a valid number of hours greater than 0.</div>
+        </div>
+        <div class="mb-3">
+            <label for="rate" class="form-label">Charge per hour:</label>
+            <input type="text" id="rate" class="form-control" value="20" readonly />
+        </div>
+        <button type="button" id="calculateBtn" class="btn btn-primary">Calculate Total</button>
+        <div class="mt-3">
+            <label for="total" class="form-label">Total cost:</label>
+            <input type="text" id="total" class="form-control" readonly />
+        </div>
+    </form>
+</div>
+<br/>
+<h3 id="ThankYou" style="display: none;">Thanks for checking out my services!</h3>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const rate = 20; // charge per hour
+
+            // When the Calculate button is clicked
+            $('#calculateBtn').click(function() {
+                // Get the number of hours entered
+                let hours = parseFloat($('#hours').val());
+
+                // Validate the input (ensure positive number)
+                if (isNaN(hours) || hours <= 0) {
+                    $('#hoursError').show(); // Show error message
+                    $('#total').val(''); // Clear the total box
+                } else {
+                    $('#hoursError').hide(); // Hide error message
+
+                    // Calculate total
+                    let total = hours * rate;
+
+                    // Display total in the output box
+                    $('#total').val('$' + total.toFixed(2));
+                    
+                    // Reveal Thank YOu
+                    $('#ThankYou').show();
+                }
+            });
+
+            // Hide error message when user changes input
+            $('#hours').on('input', function() {
+                $('#hoursError').hide();
+            });
+        });
+    </script>
+}
